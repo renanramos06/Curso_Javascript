@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>
+            Curso de Javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            // AND, OR, NOT
+
+            // AND = &&
+            // OR = ||
+            // NOT = !
+            
+            //AND
+            var sexo = 'M', idade = 22;
+            if (sexo === 'M' && idade >= 18)
+                {
+                    console.log('OK');
+                } 
+        
+            //OR
+             var sexo = 'F', idade = 22;
+            if (sexo === 'M' || idade >= 18)
+                {
+                    console.log('OK');
+                } 
+        
+            //NOT
+            var sexo = 'F';
+
+            if (sexo !== 'M')
+                {
+                    console.log('OK');
+                } 
+            
+            // INSERIR OPERADORES DENTRO DE VARIAVEIS
+
+            var sexo = 'M';
+            var masculino;
+
+            if (sexo === 'M'){
+                    masculino = true;
+                } else {
+                    masculino = false;
+                }
+        console.log(masculino)
+
+        var sexo = 'M';
+            var masculino = (sexo === 'M');
+            console.log(masculino)
+
+            //or
+            
+        var sexo = 'M';
+            var masculino = sexo === 'M';
+            console.log(masculino)
+
+        </script>
+    </body>
+</html>
