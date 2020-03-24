@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>
+            <meta charset="UTF-8">
+            Curso de Javascript
+        </title>
+    </head>
+    <body>
+        <script>
+            //Exercício 01
+            var endereco = {
+            rua: " Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            UF:     "SP",
+            };
+
+            function exerc01(endereco){
+                //O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos pinheiros" com nº 1293
+                return('o usuário mora em '+ endereco.cidade+'/'+ endereco.UF+', no bairro '+ endereco.bairro+'com nº '+ endereco.numero);
+            };
+
+            console.log(exerc01(endereco));
+
+
+            //Exercício 02
+
+            var contador = 1;
+                function pares(x, y){
+                   for (var i = x; i <= y; i++) {
+                     if (i % 2 == 0){
+                        console.log(i);
+                        contador++;
+                        }
+                    }
+                }
+
+                pares(51, 61);
+                console.log('Foram impressos '+ contador+' Números pares.');
+
+            
+            //Exercício 03
+
+            function temHabilidades(skills){
+                if (skills.indexOf('Javascript') >= 0) {
+                    return true;
+                };
+            };
+
+            var skills = ['Javascript','ReactJS', 'React Native'];
+
+            if (temHabilidades(skills)){
+                console.log('true')
+            } else {
+                console.log('false');
+            }
+
+            //Exercício 04
+
+            function experiencia(anos) {
+        if (anos <= 1) return 'Iniciante';
+        if (anos > 1 && anos <= 3) return 'Intermediário';
+        if (anos > 3 && anos <= 6) return 'Avançado';
+        if (anos > 6) return 'Jedi Master';    
+    };
+
+    var anosEstudo = 7;
+    console.log(experiencia(anosEstudo));
+
+    // De 0-1 ano: Iniciante
+    // De 1-3 anos: Intermediário
+    // De 3-6 anos: Avançado
+    // De 7 acima: Jedi Master
+     
+    //Exercício 05
+    function showMyObj(aUsers){
+        for (var habils of aUsers){
+            console.log('O ' + habils.nome + ' possui as habilidades: ' + habils.habilidades.join());
+        }
+    };
+    
+    var usuarios = [
+    {
+        nome: 'Diego',
+        habilidades: ['Javascript', 'ReactJS', 'Redux']
+    },{
+        nome: 'Gabriel',
+        habilidades: ['VueJS', 'Ruby on Rails', 'Elixir']
+    }];
+
+        var teste = showMyObj(usuarios);
+
+        </script>
+    </body>
+</html>
